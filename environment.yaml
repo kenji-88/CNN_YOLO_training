@@ -1,0 +1,14 @@
+name: rinkoucnn-env
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+      - pyqt5
+      - lxml
+      - labelImg
+      - ultralytics
+      - ipykernel
+      - pillow_heif
+      - "numpy<2"

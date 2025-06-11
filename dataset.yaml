@@ -1,0 +1,6 @@
+path: ./train_dataset
+train: train
+val: valid
+
+nc: 2
+names: ['standing','sitting']
