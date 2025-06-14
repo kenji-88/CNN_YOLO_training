@@ -16,21 +16,30 @@ YOLOv11を用いた物体検出の学習と推論を体験的に学ぶことを�
   <img src="runs/detect/predict/IMG_3555.jpg" width="250px" style="display:inline-block; margin-right:10px;">
   <img src="runs/detect/predict/IMG_3657.jpg" width="250px" style="display:inline-block;">
 </p> -->
-<h3>📸 サンプル：学習結果</h3>
+<h3>📸 サンプル：学習前 → 学習後</h3>
 
-<!-- 学習前 -->
-<figure style="display:inline-block; text-align:center; margin-right:30px;">
-  <img src="runs/detect/pre_yolov11n/IMG_3555.jpg" width="150px" style="margin-right:10px;">
-  <img src="runs/detect/pre_yolov11n/IMG_3657.jpg" width="150px">
-  <figcaption style="margin-top:5px;">学習前（ファインチューニング前）</figcaption>
-</figure>
+<div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
 
-<!-- 学習後 -->
-<figure style="display:inline-block; text-align:center;">
-  <img src="runs/detect/predict/IMG_3555.jpg" width="150px" style="margin-right:10px;">
-  <img src="runs/detect/predict/IMG_3657.jpg" width="150px">
-  <figcaption style="margin-top:5px;">学習後（ファインチューニング後）</figcaption>
-</figure>
+  <!-- 学習前2枚 -->
+  <img src="runs/detect/pre_yolov11n/IMG_3555.jpg" width="200px">
+  <img src="runs/detect/pre_yolov11n/IMG_3657.jpg" width="200px">
+
+  <!-- 矢印 -->
+  <span style="font-size: 60px; margin: 0 10px;">→</span>
+
+  <!-- 学習後2枚 -->
+  <img src="runs/detect/predict/IMG_3555.jpg" width="200px">
+  <img src="runs/detect/predict/IMG_3657.jpg" width="200px">
+
+</div>
+
+<!-- キャプション（下段） -->
+<div style="text-align: center; margin-top: 5px;">
+  <span style="margin-right: 240px;"><strong>学習前</strong></span>
+  <span><strong>学習後</strong></span>
+</div>
+
+
 
 ## :triangular_flag_on_post: 実装の全体の流れ
 #### 1. 環境構築
