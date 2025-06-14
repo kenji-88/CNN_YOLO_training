@@ -2,69 +2,43 @@
 
 機械学習班　第13回輪講　　　　　高橋研究室修士2年　吉崎健司
 
-YOLOv11を用いた物体検出の学習と推論を体験的に学ぶことを目的としたパッケージです。アノテーション、学習、推論、可視化まで一貫して体験できます。
+#### YOLOv11を用いた物体検出の学習と推論を体験的に学ぶことを目的としたパッケージです。アノテーション、学習、推論、可視化まで一貫して体験できます。
 
-<!-- ## :camera: サンプル：学習結果 -->
-<!-- <h3>例：学習前（ファインチューニング前）</h3>
-<p>
-  <img src="runs/detect/pre_yolov11n/IMG_3555.jpg" width="250px" style="display:inline-block; margin-right:10px;">
-  <img src="runs/detect/pre_yolov11n/IMG_3657.jpg" width="250px" style="display:inline-block;">
-</p>
-
-<h3>例：学習後（ファインチューニング後）</h3>
-<p>
-  <img src="runs/detect/predict/IMG_3555.jpg" width="250px" style="display:inline-block; margin-right:10px;">
-  <img src="runs/detect/predict/IMG_3657.jpg" width="250px" style="display:inline-block;">
-</p> -->
-<h3>📸 サンプル：学習前 → 学習後</h3>
-
-<div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-
-  <!-- 学習前2枚 -->
-  <img src="runs/detect/pre_yolov11n/IMG_3555.jpg" width="200px">
-  <img src="runs/detect/pre_yolov11n/IMG_3657.jpg" width="200px">
-
-  <!-- 矢印 -->
-  <span style="font-size: 60px; margin: 0 10px;">→</span>
-
-  <!-- 学習後2枚 -->
-  <img src="runs/detect/predict/IMG_3555.jpg" width="200px">
-  <img src="runs/detect/predict/IMG_3657.jpg" width="200px">
-
-</div>
-
-<!-- キャプション（下段） -->
-<div style="text-align: center; margin-top: 5px;">
-  <span style="margin-right: 240px;"><strong>学習前</strong></span>
-  <span><strong>学習後</strong></span>
-</div>
 
 <h3>📸 サンプル：学習前 → 学習後</h3>
 
 <table>
   <tr>
-    <td><img src="runs/detect/pre_yolov11n/IMG_3555.jpg" width="200px"></td>
-    <td><img src="runs/detect/pre_yolov11n/IMG_3657.jpg" width="200px"></td>
+    <td><img src="runs/detect/pre_yolov11n/IMG_3555.jpg" width="170px"></td>
+    <td><img src="runs/detect/pre_yolov11n/IMG_3657.jpg" width="170px"></td>
     <td style="font-size: 32px; text-align: center;">▶</td>
-    <td><img src="runs/detect/predict/IMG_3555.jpg" width="200px"></td>
-    <td><img src="runs/detect/predict/IMG_3657.jpg" width="200px"></td>
+    <td><img src="runs/detect/predict/IMG_3555.jpg" width="170px"></td>
+    <td><img src="runs/detect/predict/IMG_3657.jpg" width="170px"></td>
+  </tr>
+  <tr>
+    <!-- キャプション -->
+    <td align="center"><strong>person</strong></td>
+    <td align="center"><strong>person</strong></td>
+    <td></td>
+    <td align="center"><strong>standing</strong></td>
+    <td align="center"><strong>sitting</strong></td>
   </tr>
   <tr>
     <td colspan="2" align="center"><strong>学習前</strong></td>
     <td></td>
     <td colspan="2" align="center"><strong>学習後</strong></td>
   </tr>
+  
 </table>
 
 
-## :triangular_flag_on_post: 実装の全体の流れ
+### :triangular_flag_on_post: 実装の全体の流れ
 #### 1. 環境構築
 #### 2. 立っている / 座っている写真を撮影
 #### 3. アノテーション（labelImg）でラベル付け
 #### 4. YOLOv11の学習済みモデルをファインチューニング
 #### 5. 自分の画像で推論（学習前後の比較）
 #### 6. 結果を見て考察（どの条件が精度向上につながるか）
-
 
 
 ---------------------------------------------------------------------------------
