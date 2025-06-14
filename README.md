@@ -39,6 +39,22 @@ YOLOv11を用いた物体検出の学習と推論を体験的に学ぶことを�
   <span><strong>学習後</strong></span>
 </div>
 
+<h3>📸 サンプル：学習前 → 学習後</h3>
+
+<table>
+  <tr>
+    <td><img src="runs/detect/pre_yolov11n/IMG_3555.jpg" width="200px"></td>
+    <td><img src="runs/detect/pre_yolov11n/IMG_3657.jpg" width="200px"></td>
+    <td style="font-size: 32px; text-align: center;">▶</td>
+    <td><img src="runs/detect/predict/IMG_3555.jpg" width="200px"></td>
+    <td><img src="runs/detect/predict/IMG_3657.jpg" width="200px"></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><strong>学習前</strong></td>
+    <td></td>
+    <td colspan="2" align="center"><strong>学習後</strong></td>
+  </tr>
+</table>
 
 
 ## :triangular_flag_on_post: 実装の全体の流れ
