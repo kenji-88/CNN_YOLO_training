@@ -6,12 +6,17 @@ YOLOv11を用いた物体検出の学習と推論を体験的に学ぶことを�
 
 
 <h3>学習前（ファインチューニング前）</h3>
-<img src="runs/detect/pre_yolov11n/IMG_3555.jpg" width="300px">
-<img src="runs/detect/pre_yolov11n/IMG_3657.jpg" width="300px">
+<p>
+  <img src="runs/detect/pre_yolov11n/IMG_3555.jpg" width="300px" style="display:inline-block; margin-right:10px;">
+  <img src="runs/detect/pre_yolov11n/IMG_3657.jpg" width="300px" style="display:inline-block;">
+</p>
 
 <h3>学習後（ファインチューニング後）</h3>
-<img src="runs/detect/predict/IMG_3555.jpg" width="300px">
-<img src="runs/detect/predict/IMG_3657.jpg" width="300px">
+<p>
+  <img src="runs/detect/predict/IMG_3555.jpg" width="300px" style="display:inline-block; margin-right:10px;">
+  <img src="runs/detect/predict/IMG_3657.jpg" width="300px" style="display:inline-block;">
+</p>
+
 
 
 ---------------------------------------------------------------------------------
