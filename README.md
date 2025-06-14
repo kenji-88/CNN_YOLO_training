@@ -5,13 +5,13 @@
 YOLOv11を用いた物体検出の学習と推論を体験的に学ぶことを目的としたパッケージです。アノテーション、学習、推論、可視化まで一貫して体験できます。
 
 
-<h3>学習前（ファインチューニング前）</h3>
+<h3>例：学習前（ファインチューニング前）</h3>
 <p>
   <img src="runs/detect/pre_yolov11n/IMG_3555.jpg" width="300px" style="display:inline-block; margin-right:10px;">
   <img src="runs/detect/pre_yolov11n/IMG_3657.jpg" width="300px" style="display:inline-block;">
 </p>
 
-<h3>学習後（ファインチューニング後）</h3>
+<h3>例：学習後（ファインチューニング後）</h3>
 <p>
   <img src="runs/detect/predict/IMG_3555.jpg" width="300px" style="display:inline-block; margin-right:10px;">
   <img src="runs/detect/predict/IMG_3657.jpg" width="300px" style="display:inline-block;">
