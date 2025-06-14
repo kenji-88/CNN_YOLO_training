@@ -1,21 +1,29 @@
-# YOLOv11 Annotation & Inference Project
+# :memo: YOLOv11 Annotation & Inference Project
 
 機械学習班　第13回輪講　　　　　高橋研究室修士2年　吉崎健司
 
 YOLOv11を用いた物体検出の学習と推論を体験的に学ぶことを目的としたパッケージです。アノテーション、学習、推論、可視化まで一貫して体験できます。
 
-
+## :camera: サンプル：学習結果
 <h3>例：学習前（ファインチューニング前）</h3>
 <p>
-  <img src="runs/detect/pre_yolov11n/IMG_3555.jpg" width="300px" style="display:inline-block; margin-right:10px;">
-  <img src="runs/detect/pre_yolov11n/IMG_3657.jpg" width="300px" style="display:inline-block;">
+  <img src="runs/detect/pre_yolov11n/IMG_3555.jpg" width="250px" style="display:inline-block; margin-right:10px;">
+  <img src="runs/detect/pre_yolov11n/IMG_3657.jpg" width="250px" style="display:inline-block;">
 </p>
 
 <h3>例：学習後（ファインチューニング後）</h3>
 <p>
-  <img src="runs/detect/predict/IMG_3555.jpg" width="300px" style="display:inline-block; margin-right:10px;">
-  <img src="runs/detect/predict/IMG_3657.jpg" width="300px" style="display:inline-block;">
+  <img src="runs/detect/predict/IMG_3555.jpg" width="250px" style="display:inline-block; margin-right:10px;">
+  <img src="runs/detect/predict/IMG_3657.jpg" width="250px" style="display:inline-block;">
 </p>
+
+## :triangular_flag_on_post: 実装の全体の流れ
+#### 1. 環境構築
+#### 2. 立っている / 座っている写真を撮影
+#### 3. アノテーション（labelImg）でラベル付け
+#### 4. YOLOv11の学習済みモデルをファインチューニング
+#### 5. 自分の画像で推論（学習前後の比較）
+#### 6. 結果を見て考察（どの条件が精度向上につながるか）
 
 
 
@@ -23,26 +31,11 @@ YOLOv11を用いた物体検出の学習と推論を体験的に学ぶことを�
 ---------------------------------------------------------------------------------
 
 ##  1. 環境構築
-
-### ▶ Anaconda仮想環境の作成と初期設定
-
+### ▶ Rinkou_CNNをダウンロード
 ```bash
-# 環境構築スクリプトを実行
-chmod +x setup.sh
-./setup.sh
-
-# 仮想環境の有効化
-conda activate rinkoucnn-env
+git clone https://github.com/kenji-88/Rinkou_CNN-YOLO-.git
 ```
-
-必要なPythonパッケージやYOLOリポジトリが自動的にインストールされます。
-
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-
-## 　2. データの準備
-
-### ▶ ディレクトリ構成
+#### ・ ディレクトリ構成
 
 ```
 Rinkou_CNN/
@@ -56,9 +49,42 @@ Rinkou_CNN/
 ├── PUT_IMAGE_HERE  # スマホで撮った写真を入れるファイル
 ├── Image_Converter.py # HEIC,PNG形式の画像をJPGに変換
 ├── setup.sh
+├── setup.bat
 ├── environment.yaml
 ├── dataset.yaml
 ```
+
+
+### ▶ Anaconda仮想環境の作成と初期設定
+
+#### ・ Linuxの人（Ubuntu / MacOS）
+```bash
+# 環境構築スクリプトを実行
+chmod +x setup.sh
+./setup.sh
+
+# 仮想環境の有効化
+conda activate rinkoucnn-env
+```
+
+#### ・ Windowsの人
+```bash
+# 環境構築スクリプトを実行
+./setup.bat
+
+# 仮想環境の有効化
+conda activate rinkoucnn-env
+```
+
+必要なPythonパッケージやYOLOリポジトリが自動的にインストールされます。
+
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+
+## 　2. データの準備
+
+
+
 
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
