@@ -44,7 +44,7 @@
 ##  1. **環境構築**：必要パッケージのインストール
 ### ▶ Rinkou_CNNをGithubからクローン
 ```bash
-git clone https://github.com/kenji-88/Rinkou_CNN-YOLO-.git
+git clone https://github.com/kenji-88/CNN_YOLO_training.git
 ```
 #### ・ ディレクトリ構成
 
